@@ -15,23 +15,28 @@ install_bash_profile() {
   cp -p .bash_profile ${HOME}/
 }
 
-install_packages() {
-  ./install_ruby.sh
+install_languages() {
+#  ./install_ruby.sh
   ./install_node.sh
   ./install_golang.sh
-  ./install_java.sh
-  ./install_php.sh
+#  ./install_java.sh
+}
+
+install_middlewares() {
   ./install_docker.sh
 }
 
-install_services() {
-  ./services/install_heroku.sh
-  ./services/install_awscli.sh
+install_tools() {
+#  ./tool/install_heroku.sh
+  ./tool/install_awscli.sh
+# ./tool/install_gcloud.sh
+  ./tool/install_kubectl.sh
 }
 
 install_apt_packages
 install_bash_profile
 curl -L raw.github.com/koooge/dotfiles/master/install.sh | bash
 
-# install_packages
-# install_services
+install_languages
+install_middlewares
+install_tools
