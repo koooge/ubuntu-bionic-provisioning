@@ -2,7 +2,7 @@
 
 # Usage: `./install_docker.sh`
 
-COMPOSE_VER=1.20.1
+COMPOSE_VER=1.21.2
 
 ## docker
 install_docker() {
