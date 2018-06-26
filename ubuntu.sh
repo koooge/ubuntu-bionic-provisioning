@@ -35,7 +35,7 @@ install_tools() {
 
 install_apt_packages
 install_bash_profile
-curl -L raw.github.com/koooge/dotfiles/master/install.sh | bash
+curl -sSL raw.github.com/koooge/dotfiles/master/install.sh | bash
 
 install_languages
 install_middlewares
