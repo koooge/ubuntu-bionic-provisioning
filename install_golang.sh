@@ -40,14 +40,8 @@ go_get_packages() {
   cp /tmp/peco_linux_amd64/peco ${GOPATH}/bin/
 }
 
-install_vim_go() {
-  curl -sSfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
-}
-
 # install_gvm
 install_golang
 go_get_packages
-install_vim_go
 
 go version
