@@ -12,7 +12,7 @@ install_gvm() {
 }
 
 install_golang() {
-  wget -O - ${GO_URL} | sudo tar zxC /usr/local
+  wget -qO - ${GO_URL} | sudo tar zxC /usr/local
 
   cp ./.bash.d/go.sh ${HOME}/.bash.d/
   export PATH=${PATH}:/usr/local/go/bin
