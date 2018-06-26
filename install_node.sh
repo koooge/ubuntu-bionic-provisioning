@@ -7,6 +7,7 @@ NODE_VERSION="lts/carbon"
 
 install_nvm() {
   curl -sSo- https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | bash
+  source ${HOME}/.nvm/nvm.sh
 }
 
 install_node() {
