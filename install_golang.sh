@@ -15,8 +15,8 @@ install_golang() {
   wget -O - ${GO_URL} | sudo tar zxC /usr/local
 
   cp ./.bash.d/go.sh ${HOME}/.bash.d/
-  export PATH=$PATH:/usr/local/go/bin
-  export GOPATH=$HOME/go
+  export PATH=${PATH}:/usr/local/go/bin
+  export GOPATH=${HOME}/go
 }
 
 go_get_packages() {
@@ -28,7 +28,7 @@ go_get_packages() {
   go get github.com/motemen/gore
   go get github.com/motemen/ghq
 	echo "[ghq]" >> ~/.gitconfig
-	echo "	root = ${HOME}/ghq" >> ~/.gitconfig
+	echo "	root = ${HOME}/go/src" >> ~/.gitconfig
 #  go get github.com/nsf/gocode
 #  go get github.com/rogpeppe/godef
 #  go get github.com/jstemmer/gotags
