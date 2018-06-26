@@ -36,7 +36,7 @@ go_get_packages() {
 #  go get github.com/pilu/fresh
 #  go get github.com/github/hub
 
-  wget -O - https://github.com/peco/peco/releases/download/${PECO_VERSION}/peco_linux_amd64.tar.gz | tar zxf - -C /tmp/
+  wget -qO - https://github.com/peco/peco/releases/download/${PECO_VERSION}/peco_linux_amd64.tar.gz | tar zxf - -C /tmp/
   cp /tmp/peco_linux_amd64/peco ${GOPATH}/bin/
 }
 
