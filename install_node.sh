@@ -29,7 +29,7 @@ install_yarn() {
 install_nvm
 install_node
 install_npm_global
-inrall_yarn
+install_yarn
 
 nvm version
 node -v
