@@ -6,7 +6,7 @@ COMPOSE_VER=1.21.2
 
 ## docker
 install_docker() {
-  sudo apt-get update
+  sudo apt-get update -qq
   sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
@@ -15,7 +15,7 @@ install_docker() {
          $(lsb_release -cs) \
          stable"
 
-  sudo apt-get update
+  sudo apt-get update -qq
   sudo apt-get install -y docker-ce
   sudo systemctl start docker
 
@@ -25,7 +25,7 @@ install_docker() {
 
 ## dockere-compose
 install_docker_compose() {
-  curl -L http://github.com/docker/compose/releases/download/${COMPOSE_VER}/docker-compose-`uname -s`-`uname -m` > /tmp/docker-compose
+  curl -sS  L http://github.com/docker/compose/releases/download/${COMPOSE_VER}/docker-compose-`uname -s`-`uname -m` > /tmp/docker-compose
   chmod +x /tmp/docker-compose
   sudo mv /tmp/docker-compose /usr/local/bin/
 }
