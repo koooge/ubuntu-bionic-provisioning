@@ -27,6 +27,7 @@ go_get_packages() {
 #  go get github.com/golang/lint/golint
   go get github.com/motemen/gore
   go get github.com/motemen/ghq
+	echo "" >> ~/.gitconfig
 	echo "[ghq]" >> ~/.gitconfig
 	echo "	root = ${HOME}/go/src" >> ~/.gitconfig
 #  go get github.com/nsf/gocode
