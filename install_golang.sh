@@ -2,10 +2,10 @@
 
 # Usage `./install_golang.sh && source ~/.bash_profile`
 
-GO_VERSION=1.10.3
+GO_VERSION=1.11
 PECO_VERSION=v0.5.3
 
-GO_URL=https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.tar.gz
+GO_URL=https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz
 
 install_gvm() {
   echo ""
