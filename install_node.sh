@@ -16,10 +16,6 @@ install_node() {
   nvm alias default ${NODE_VERSION}
 }
 
-install_npm_global() {
-  npm install -g express-generator
-}
-
 install_yarn() {
   curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
   echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -28,7 +24,6 @@ install_yarn() {
 
 install_nvm
 install_node
-install_npm_global
 install_yarn
 
 nvm version
