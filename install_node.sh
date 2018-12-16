@@ -3,7 +3,7 @@
 # Usage: `./install_node.sh`
 
 NVM_VERSION="v0.33.11"
-NODE_VERSION="lts/carbon"
+NODE_VERSION="lts/dubnium"
 
 install_nvm() {
   curl -sSo- https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | bash
