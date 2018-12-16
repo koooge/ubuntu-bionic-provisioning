@@ -2,7 +2,7 @@
 
 install_apt_packages() {
   sudo apt-get update -qq
-  sudo DEBIAN_FRONTEND=noninteractive apt dist-upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" > /dev/null
+  sudo DEBIAN_FRONTEND=noninteractive apt-get dist-upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
   sudo apt-get install -y curl git zip unzip bzip2 \
     ntp \
     gcc g++ make bison \
