@@ -2,7 +2,7 @@
 
 # Usage: `./install_docker.sh`
 
-COMPOSE_VER=1.23.2
+COMPOSE_VER=$(curl -Ls -o /dev/null -w %{url_effective} https://github.com/docker/compose/releases/latest | cut -d'/' -f8)
 
 ## docker
 install_docker() {
