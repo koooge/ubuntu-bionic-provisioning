@@ -34,6 +34,10 @@ install_tools() {
   ./tool/install_kubectl.sh
 }
 
+setup_vim() {
+  ./setup_vim.sh
+}
+
 install_apt_packages
 install_bash_profile
 curl -sSL raw.github.com/koooge/dotfiles/master/install.sh | bash
@@ -41,3 +45,4 @@ curl -sSL raw.github.com/koooge/dotfiles/master/install.sh | bash
 install_languages
 install_middlewares
 install_tools
+setup_vim
