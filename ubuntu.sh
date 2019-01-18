@@ -16,11 +16,11 @@ install_bash_profile() {
 }
 
 install_languages() {
-  ./install_golang.sh
-#  ./install_java.sh
-  ./install_node.sh
-  ./install_python.sh
-#  ./install_ruby.sh
+  ./lang/install_golang.sh
+#  ./lang/install_java.sh
+  ./lang/install_node.sh
+  ./lang/install_python.sh
+#  ./lang/install_ruby.sh
 }
 
 install_middlewares() {
