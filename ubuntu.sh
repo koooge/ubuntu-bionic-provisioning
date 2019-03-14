@@ -20,7 +20,7 @@ install_languages() {
 #  ./lang/install_java.sh
   ./lang/install_node.sh
   ./lang/install_python.sh
-#  ./lang/install_ruby.sh
+  ./lang/install_ruby.sh
 }
 
 install_middlewares() {
