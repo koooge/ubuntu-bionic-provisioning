@@ -13,3 +13,6 @@ git_branch() {
   echo $(git branch 2> /dev/null | sed -n 's/^\* \(.*\)$/(\1)/p')
 }
 PS1='[vagrant]\033[01;34m\]$(git_branch)\[\033[00m\]:\w\n\$ '
+
+# direnv
+eval "$(direnv hook bash)"
