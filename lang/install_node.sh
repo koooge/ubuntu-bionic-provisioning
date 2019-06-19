@@ -2,7 +2,7 @@
 
 # Usage: `./install_node.sh`
 
-NVM_VERSION="v0.33.11"
+NVM_VERSION="v0.34.0"
 NODE_VERSION="lts/dubnium"
 
 install_nvm() {
