@@ -6,7 +6,7 @@ install_apt_packages() {
   sudo apt-get install -y curl git zip unzip bzip2 \
     ntp \
     gcc g++ make bison \
-    vim global \
+    vim ctags global \
     tig tree jq dos2unix lv silversearcher-ag direnv
 }
 
