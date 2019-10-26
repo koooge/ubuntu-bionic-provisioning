@@ -2,7 +2,7 @@
 
 # Usage `./install_golang.sh && source ~/.bash_profile`
 
-GO_VERSION=1.12.9
+GO_VERSION=1.13.3
 PECO_VERSION=v0.5.3
 
 GO_URL=https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz
