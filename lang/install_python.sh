@@ -3,10 +3,12 @@
 # Usage: `$ ./install_python.sh`
 
 install_packages() {
-  sudo update-alternatives --set python /usr/bin/python3
   sudo apt-get update -qq && sudo apt-get install -y python3-pip python3-venv
   mkdir -p ${HOME}/.venv
-
+  
+  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+  sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
+  
   echo 'export PATH=${PATH}:${HOME}/.local/bin' >> ${HOME}/.bash_profile
 }
 
