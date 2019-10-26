@@ -3,6 +3,7 @@
 # Usage: `$ ./install_python.sh`
 
 install_packages() {
+  sudo update-alternatives --set python /usr/bin/python3
   sudo apt-get update -qq && sudo apt-get install -y python3-pip python3-venv
   mkdir -p ${HOME}/.venv
 
