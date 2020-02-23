@@ -2,8 +2,8 @@
 
 # Usage `./install_golang.sh && source ~/.bash_profile`
 
-GO_VERSION=1.13.3
-PECO_VERSION=v0.5.3
+GO_VERSION=1.13.8
+PECO_VERSION=v0.5.7
 
 GO_URL=https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz
 
@@ -31,13 +31,6 @@ go_get_packages() {
 	echo "" >> ~/.gitconfig
 	echo "[ghq]" >> ~/.gitconfig
 	echo "	root = ${HOME}/go/src" >> ~/.gitconfig
-#  go get github.com/nsf/gocode
-#  go get github.com/rogpeppe/godef
-#  go get github.com/jstemmer/gotags
-#  go get github.com/k0kubun/pp
-#  go get github.com/pilu/fresh
-#  go get github.com/github/hub
-  go get -u github.com/tcnksm/ghr
 
   wget -qO - https://github.com/peco/peco/releases/download/${PECO_VERSION}/peco_linux_amd64.tar.gz | tar zxf - -C /tmp/
   cp /tmp/peco_linux_amd64/peco ${GOPATH}/bin/
