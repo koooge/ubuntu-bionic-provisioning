@@ -3,7 +3,6 @@
 # Usage `./install_golang.sh && source ~/.bash_profile`
 
 GO_VERSION=1.13.8
-PECO_VERSION=v0.5.7
 
 GO_URL=https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz
 
@@ -31,9 +30,6 @@ go_get_packages() {
 	echo "" >> ~/.gitconfig
 	echo "[ghq]" >> ~/.gitconfig
 	echo "	root = ${HOME}/go/src" >> ~/.gitconfig
-
-  wget -qO - https://github.com/peco/peco/releases/download/${PECO_VERSION}/peco_linux_amd64.tar.gz | tar zxf - -C /tmp/
-  cp /tmp/peco_linux_amd64/peco ${GOPATH}/bin/
 }
 
 # install_gvm

@@ -7,7 +7,7 @@ install_apt_packages() {
     ntp \
     gcc g++ make bison \
     vim ctags global \
-    tig tree jq dos2unix lv silversearcher-ag direnv
+    tig tree jq peco dos2unix lv silversearcher-ag direnv
 }
 
 install_bash_profile() {
